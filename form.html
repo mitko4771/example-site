@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Task</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/formStyle.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <form id="regform" action="in_a_galaxy_far_far_away.php" method="post">
+        <label for="firsname">First Name</label>
+        <input name="firstname" type="text" required>
+        
+        <label for="lastname">Last Name</label>
+        <input name="lastname" type="text" required>
+        
+        <label for="email">Enter email</label>
+        <input name="email" type="text" id='txtEmail' required>
+        
+        <label for="password">Password</label>
+        <input name="password" type="password" id="password" required>
+        
+        <label for="confirmpassword">confirm Password</label>
+        <input name="confirmpassword" type="password" id="confirm_password" required>
+        
+        <label for="male">Male</label>
+        <input type="radio" name="gender" value="male" checked>
+        
+        <label for="female">Female</label>
+        <input type="radio" name="gender" value="female">
+        
+        <label for="country">Country</label>
+        <select id="country" name="country">
+          <option value="bulgaria">Bulgaria</option>
+          <option value="italy">Italy</option>
+          <option value="germany">Germany</option>
+        </select>
+        
+        <input type="submit" value="submit" id="btnSubmit" onclick='Javascript:checkEmail();'>
+    </form>
+    
+    <h2 id='result'></h2>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
